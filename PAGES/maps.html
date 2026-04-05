@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>trical ⚡⚡</title>
+    <link rel="stylesheet" href="/CSS/maps.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header-left">
+          <a href="../index.html">
+              <img src="/DATA/Media/icons/house-solid.svg" alt="Home" class="home-icon">
+          </a>
+      </div>
+      <div class="header-center">
+          <img src="/DATA/Media/logo.png" alt="Department Logo" class="header-logo">
+         
+      </div>
+  </header>
+    <main>
+
+     <!-- Navbar -->
+    <nav class="navbar">
+
+      <!--Desktop Navbar-->
+      <ul class="desktop">
+          <li><a target="_blank" href="https://vnit.ac.in/" class="desk-item">VNIT Home</a></li>
+          <li class="has-dropdown">
+              <a href="#" class="desk-item">Student Section
+              <span class="arrow"></span>
+              </a>
+              <ul class="submenu">
+                  <li><a href="#" class="desk-item student-menu">Department Council</a></li>
+                  <!-- <li><a href="#" class="desk-item student-menu">Student Details</a></li> -->
+                  <li class="has-dropdown"><a href="#" class="desk-item student-menu">CourseBook
+                      <span class="sub-arrow"></span>
+                  </a>
+                  <ul class="submenu">
+                      <li><a target="_blank" href="/DATA/TimeTableJson/first_year_cb.pdf" class="desk-item">First Year Coursebook</a></li>
+                      <li><a target="_blank" href="https://vnit.ac.in/engineering/electrical/academics/" class="desk-item">Department Coursebook</a></li>
+                  </ul>
+                  </li>
+                  <li><a href="/Faculty_Advisor/fa.html" class="desk-item student-menu">Faculty Advisors</a></li>
+                  <li><a target="_blank" href="/PAGES/mentor.html" class="desk-item student-menu">Mentors</a></li>
+                  <li><a target="_blank" href="/DATA/TimeTableJson/code_of_conduct.pdf" class="desk-item student-menu">Code Of Conduct</a></li>
+              </ul>
+          </li>
+          <li><a target="_blank" href="/Gallery_Final/trail.html" class="desk-item">Gallery</a></li>
+          <li><a target="_blank" href="/PAGES/prof-gallery.html" class="desk-item">Professor Section</a></li>
+          <li class="has-dropdown">
+              <a href="/PAGES/timetable.html" class="desk-item">Time Table
+                  <span class="arrow"></span>
+              </a>
+              <ul class="submenu">
+                  <li><a target="_blank" href="/DATA/TimeTableJson/FirstYearBTechTimeTable2024-25.pdf" class="desk-item student-menu">First year</a></li>
+                  <li><a target="_blank" href="/DATA/TimeTableJson/TT_W24.pdf" class="desk-item student-menu">Second year</a></li>
+                  <li><a target="_blank" href="/DATA/TimeTableJson/TT_W24.pdf" class="desk-item student-menu">Third year</a></li>
+              </ul>
+          </li>
+          <li><a href="../newspage/news.html" class="desk-item">News and Notice</a></li>
+
+      </ul>
+
+      <!--Mobile Navbar-->
+      <div class="mobile">
+          <ul>
+              <li class="active"><a href="#" id="home"><span>Home</span><i class="ri-home-3-line"></i></a></li>
+              <li><a href="#" id="academic"><span>Academics</span><i class="ri-user-3-line"></i></a></li>
+              
+              <li ><a href="#" id="gallery"><span>Gallery</span><i class="ri-gallery-line"></i></a></li>
+              <li><a href="#" id="professors"><span>Professors</span><i class="ri-presentation-line"></i></a></li>
+              <li><a href="#" id="notice"><span>Notices</span><i class="ri-article-line"></i></a></li>
+          </ul>
+      </div>
+  </nav>
+
+
+<script src="/Scripts/map-js.js"></script>
+
+<div class="container">
+  <div class="search-container">
+    <input type="text" id="searchBar" placeholder="Search for labs...(By name or year)" />
+    <button id="searchButton">Search</button>
+  </div>
+
+  <div id="tableContainer" class="table-container hidden">
+    <table id="linksTable">
+      <thead>
+        <tr>
+          <th>LAB Name</th>
+          <th>YEAR</th>
+          <th>Location description</th>
+          <th>LOCATION</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Basic Electrical lab</td>
+          <td>first</td>
+          <td>Electrical department: <br>
+             BESIDE EN1/4,FIRST FLOOR  
+          </td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/mb6T4HWh8Vpg6T469', 'Basic Electrical lab')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Chemistry</td>
+          <td>first</td>
+          <td>Chemistry department: <br>
+             FIRST FLOOR  
+          </td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/R7pLPM3S3m3g2CmS7', 'Chemistry lab')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+          <td>Physics</td>
+          <td>first</td>
+          <td>PHYSICS department: <br>
+          GROUND FLOOR</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/YxEzsN9t8uPyUACH7', 'Physics Lab')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Workshop</td>
+          <td>first</td>
+          <td>Mechanical Workshop: <br>
+          GROUND FLOOR</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/zo7ue4yKGLFYZuRBA', 'Mechanical Workshop')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <td>Computer programming</td>
+        <td>first</td>
+        <td>library: <br>
+        Second FLOOR</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/9GGgC4Ry8x7pdtfx9', 'Computer programming lab')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Engineering Drawing</td>
+          <td>first</td>
+          <td>Classroom Complex: <br>
+             Ground FLOOR</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/U7qaxHB9c5Va8evQA', 'Engineering Drawing')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <td>Communication Skills</td>
+        <td>first</td>
+        <td>New Academic: <br>
+           SIXTH FLOOR</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/tnskr31weDkgWXdU6', 'Communication Skills LAB')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Engineering Mechanics</td>
+          <td>first</td>
+          <td>Applied Mechanics department: <br>
+             first FLOOR</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/N2vvFQjYCBqqmD7B7', 'Engineering Mechanics')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <td>Network Theory</td>
+        <td>second</td>
+        <td>New Academic Building: <br>
+           Network laboratory,Second FLOOR</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/tnskr31weDkgWXdU6', 'Network Theory LAB')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Measurment and instrumentation</td>
+          <td>Second</td>
+          <td>Electrical department: <br>
+             Ground FLOOR</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/mb6T4HWh8Vpg6T469', 'Measurments and instrumentation lab')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <td>Electronic devices and circuits </td>
+        <td>Second</td>
+        <td>Electronics and communication department: <br>
+           FIRST FLOOR</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/2HHa9h6uk8uJeXu69', 'Electronic devices and circuits lab')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Machines-I</td>
+          <td>second</td>
+          <td>Electrical department: <br>
+             Below EN-1/8,Ground FLOOR</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/mb6T4HWh8Vpg6T469', 'Machines-I LAB')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <td>Programming techniques and simulation lab</td>
+        <td>second</td>
+        <td>Electrical department: <br>
+           BESIDE EN-0/1,Ground FLOOR</td>
+        <td>
+          <button
+            onclick="viewLink('https://maps.app.goo.gl/mb6T4HWh8Vpg6T469', 'PTSL LAB')"
+              >View
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Electrical Workshop</td>
+          <td>second</td>
+          <td>Electrical department: <br>
+             Beside EN-1/1,FIRST FLOOR</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/mb6T4HWh8Vpg6T469', 'Electrical Workshop')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Linear electronics circuits </td>
+          <td>second</td>
+          <td>Electronics and communication department: <br>
+             FIRST FLOOR</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/2HHa9h6uk8uJeXu69', 'Linear electronics circuits')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Digital circuits</td>
+          <td>second</td>
+          <td>Electronics and communication department: <br>
+             Ground FLOOR</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/2HHa9h6uk8uJeXu69', 'Digital circuits')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Machines-II</td>
+          <td>third</td>
+          <td>Electrical department: <br>
+             Same as Machines-I,Ground FLOOR</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/mb6T4HWh8Vpg6T469', 'Machines-II')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Control Systems  </td>
+          <td>third</td>
+          <td>Electrical department: <br>
+             FRONT OF Basic Electrical lab,Ground FLOOR</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/mb6T4HWh8Vpg6T469', 'Control Systems lab')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <tr>
+          <td>Power electronics</td>
+          <td>third</td>
+          <td>New Academic Building: <br>
+             Network lab,Second floor</td>
+          <td>
+            <button
+              onclick="viewLink('https://maps.app.goo.gl/tnskr31weDkgWXdU6', 'Power electronics')"
+            >
+              View
+            </button>
+          </td>
+        </tr>
+        <!-- More rows as needed -->
+      </tbody>
+    </table>
+  </div>
+
+  <div id="viewSection" class="view-section">
+    <h2>Lab Details</h2>
+    <p>Search for a lab to see details here.</p>
+  </div>
+</div>
+<script src="/Scripts/map.js"></script>
+
+
+
+
+      <h2 class="location">LOCATION OF OUR DEPARTMENT</h2>
+      <p > <div class="map">
+        <div  id="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d767.4808032832631!2d79.05129410732289!3d21.122639449652265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bd4c07771109e09%3A0x854a5ccc7f6fbf94!2sElectrical%20and%20Electronics%20Department%2C%20VNIT!5e0!3m2!1sen!2sin!4v1725125483799!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+      </p>
+    
+    </main>
+    <footer>
+      <div>
+          <img src="/DATA/footer/logo.png" alt="">
+      </div>
+
+      <div class="links">
+        <h3>Quick Links</h3>
+        <a target="_blank" href="https://aims.vnit.ac.in/exam">AIMS Login</a>
+        <a target="_blank" href="./PAGES/maps.html">Direction & Map</a>
+      </div>
+
+      <div class="contact">
+          <h3>Reach Us</h3>
+          <p>Contact- 0712-2801349</p>
+          <p>Email: head@eee.vnit.ac.in</p>
+          <div class="social">
+              <a target="_blank" href="https://www.instagram.com/vnit_trical?igsh=OWZxOTJndDZnd3Fi"><img src="/DATA/footer/instagram-bw.png" alt=""></a>
+              <a target="_blank" href="https://www.linkedin.com/school/visvesvaraya-national-institute-of-technology/"><img src="/DATA/footer/linkedin-bw.png" alt=""></a>
+          </div>
+      </div>
+  </footer>
+  </body>
+</html>

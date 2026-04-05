@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electrical Faculty</title>
+    <style>
+        *{
+            cursor: url('/DATA/Media/icons/bolt-solid.svg') 0 0, auto;
+        }
+        body {
+            font-family: sans-serif;
+            color: rgb(52, 117, 104);
+            background-color: #F5F5F5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #c168a6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 48px;
+            
+        }
+
+        
+        .Umre-flex{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 48px;
+            padding-bottom: 12px;
+
+        }
+        .Umre-pic-div{
+            width: 240px;
+            padding-bottom: 12px;
+            transition: transform 0.25s ease-in-out;
+        }
+    
+        .Umre-pic-div:hover{
+            transform: scale(1.2);
+        }
+        .Umre-pic{
+            margin-left:20px;
+            border-radius: 30px;
+            width: 100%;
+        }
+
+        .Umre-pic-1{
+            margin-left:20px;
+            border-radius: 30px;
+            height: 240px;
+            margin-left: 50px;
+        }
+        .Umre-text{
+            text-align: center;
+            width: 280px;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+            padding-top:20px;
+            padding-bottom:20px;
+        }
+        
+        .prof-position{
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            height: 455px;
+            text-align: center;
+            color: white;
+            background-color: rgba(0,0, 0, 0.6);
+        }
+       
+         .prof-position-text{
+            display: block;
+            font-size: 48px;
+            font-style: normal;
+            margin-top: 180px;
+            font-weight: bold;
+            letter-spacing: normal;
+            line-height: 57.2px;
+            position: relative;
+            font-family: 'Oswald', sans-serif;
+            letter-spacing:  -0.08em; 
+
+         }
+
+         .prof-position-text-2{
+            letter-spacing:  -0.05em; 
+            color: rgb(252, 185, 0);
+
+         }
+         .card {
+          height: 150px;
+          border: 1px solid #ddd;
+          text-align: center;
+          overflow: hidden;
+            }
+
+        .card img {
+            width: 100%;
+             height: 100%;
+            object-fit: cover;
+            }   
+        .grid{
+        height: 455px;
+        overflow: hidden;
+        display:grid; 
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        }
+        button{
+            border: none;
+            background-color: #F5F5F5;
+        }
+        button:hover{
+            cursor: pointer;
+        }
+        .footer{
+            margin-left: 12px;
+            border: solid;
+            border-width: 0px;
+            border-bottom-width: 1px ;
+        }
+        .footer-header{
+            background-color: #c168a6;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-bottom: 48px;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        @media (max-width:1308.5px){
+            .grid{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  ;
+            }
+
+        }
+        @media (max-width:1145px){
+            .grid{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr   ;
+            }
+
+        }
+        @media (max-width:981.5px){
+            .grid{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr    ;
+            }
+
+        }
+        @media (max-width:818px){
+            .grid{
+                grid-template-columns: 1fr 1fr 1fr 1fr 1fr   ;
+            }
+
+        }
+        @media (max-width:654.5px){
+            .grid{
+                grid-template-columns: 1fr 1fr 1fr 1fr   ;
+            }
+
+        }
+        @media (max-width:491px){
+            .grid{
+                grid-template-columns: 1fr 1fr 1fr  ;
+            }
+        }
+
+        
+#new-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; 
+    width: 100%;
+    height: 100px; 
+  }
+  .body{
+    margin-top: 100px;
+  }
+  
+  
+  .header-left {
+    position: absolute;
+    left: 20px; 
+  }
+  
+  .home-icon {
+    width: 30px; 
+  }
+  
+  
+  .header-center {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .header-logo {
+    width: 350px; 
+    margin-bottom: 5px;
+  }
+  
+  .header-center h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #000; 
+  }
+  
+  
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+    .header-left {
+        margin-bottom: 10px;
+    }
+    .header-center h1 {
+        font-size: 1.2em;
+    }
+
+
+         
+    </style>
+</head>
+
+
+<body>
+    <header class="header" id="new-header">
+        <div class="header-left">
+            <a href="../index.html">
+                <img src="/DATA/Media/icons/house-solid.svg" alt="Home" class="home-icon">
+            </a>
+        </div>
+        <div class="header-center">
+            <img src="/DATA/Media/logo.png" alt="Department Logo" class="header-logo">
+           
+        </div>
+    </header>
+
+
+    <header class="header-style">
+        <h1 >HEAD OF DEPARTMENT (HOD)</h1>
+    </header>
+
+   <div class="Umre-flex">
+        <div >
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-b-s-umre/">
+                    <img class="Umre-pic" src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/11-300x300.jpg">
+                </a>
+            </div>
+
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-b-s-umre/">
+                    <button >
+                        <h2 class="designation"><u>Dr. B.S. Umre</u></h2>
+                        <p class="title" >Professor & Head</p>
+                        <p class="designation" >Electrical Machines and Torsional Oscillations</p>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <header class="header-style">
+        <h1 >PROFESSOR (HAG)</h1>
+    </header>
+    <div class="Umre-flex">
+        <div >
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-h-m-suryawanshi/">
+                    <img class="Umre-pic" src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2022/12/hmsuryawanshi.jpg" >
+                </a>
+            </div>
+            <div class="Umre-text">
+                    <a href="https://vnit.ac.in/engineering/electrical/dr-h-m-suryawanshi/">
+                        <button>    
+                            <h2 class="designation"><u>Dr. H.M. Suryawanshi</u></h2>
+                            <p class="title">Power Electronics, Power system</p>
+                        </button>
+                    </a>
+            
+            </div>
+        </div>
+    </div>
+    <header class="header-style">
+        <h1 >PROFESSOR</h1>
+    </header>
+
+    <div class="container">
+        
+        
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-m-k-khedkar/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/23.jpg" class="Umre-pic">
+                </a>
+               
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-m-k-khedkar/">
+                    <button>
+                        <h2><u>Dr. M.K. Khedkar</u></h2>
+                    <p class="description">Distribution automation and RES</p>
+                    </button>
+                    
+                </a>
+                
+            </div>
+               
+        </div>
+
+        <div>
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-v-b-borghate/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/32.jpg" class="Umre-pic">
+                </a>
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-v-b-borghate/">
+                    <button>
+                        <h2><u>Dr. V.B. Borghate</u></h2>
+                <p class="description">Power Electronics, Power quality</p>
+                    </button>
+                </a>
+                
+            </div>
+    
+        </div>
+        
+        <div>
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-mrs-m-a-chaudhari/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/38.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-mrs-m-a-chaudhari/">
+                    <button>
+                        <h2>Dr. (Mrs.) M. A. Chaudhari</h2>
+                        <p class="description">Power Electronics, Power quality</p>
+                    </button>
+                </a>
+                
+            </div>
+
+        </div>
+        
+        <div>
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-m-s-ballal/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/39.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-m-s-ballal/">
+                    <button>
+                        <h2>Dr. M. S. Ballal</h2>
+                        <p class="description">Condition monitoring, metering and power system</p>
+                    </button>
+                </a>
+
+            </div>
+
+        </div>
+        
+        <div>
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-p-s-kulkarni/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/3.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-p-s-kulkarni/">
+                    <button>
+                        <h2>Dr. P.S. Kulkarni</h2>
+                <p class="description">Power system operation, solar PV system</p>
+                    </button>
+                </a>
+                
+            </div>
+
+        </div>
+        
+        <div>
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-m-r-ramteke/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/4.jpg" class="Umre-pic">
+                </a>
+               
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-m-r-ramteke/">
+                    <button>
+                        <h2>Dr. M.R. Ramteke</h2>
+                        <p class="description">Power Electronics</p>
+                    </button>
+                    
+                </a>
+            </div>
+        </div>
+
+        <div>
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-s-s-bhat/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/22.jpg " class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-s-s-bhat/">
+                    <button>
+                        <h2>Dr. S. S. Bhat</h2>
+                        <p class="description">Power system analysis and dynamics</p>
+                    </button>
+                </a>
+                
+            </div>
+        </div>
+        
+        <div>
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-v-s-kale/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/27.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">    
+                <a href="https://vnit.ac.in/engineering/electrical/dr-v-s-kale/">
+                    <button>
+                        <h2>Dr. V.S. Kale</h2>
+                        <p class="description">Power system protection</p>
+                    </button>
+                </a>
+                
+            </div>
+        </div>
+        
+        <div>
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-mrs-n-r-patne/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/35.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">    
+                <a href="https://vnit.ac.in/engineering/electrical/dr-mrs-n-r-patne/">
+                    <button>
+                        <h2>Dr. (Mrs) N. R. Patne</h2>
+                        <p class="description">Power system opera. energy management in micro grid</p>
+                    </button>
+                </a>
+                
+            </div>
+        </div>
+
+    </div>
+    <header class="header-style">
+        <h1 >ASSOCIATE PROFESSOR</h1>
+    </header>
+
+    <div class="container">
+        
+        
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-ritesh-kumar-keshri/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/33.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-ritesh-kumar-keshri/">
+                    <button>
+                        <h2>DR. Ritesh Kumar Keshari</h2>
+                        <p class="description">Power Electronics, Drives for EV</p>
+                    </button>
+                </a>
+
+            </div>
+               
+        </div>
+
+    
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-pradyumn-chaturvedi/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2024/04/DSC_3158-scaled.jpg" class="Umre-pic-1">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-pradyumn-chaturvedi/">
+                    <button>
+                        <h2>Dr. Pradyumn Chaturvedi</h2>
+                        <p class="description">Power Electronics</p>
+                    </button>
+                </a>
+                
+            </div>
+               
+        </div>
+
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-m-m-lokhande/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/29.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-m-m-lokhande/">
+                    <button>
+                        <h2>Dr. M.M. Lokhande</h2>
+                        <p class="description">Power Electronics</p>
+                    </button>
+
+                </a>
+            </div>
+               
+        </div>
+
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/r-j-satputaley/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/34.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/r-j-satputaley/">
+                    <button>
+                        <h2>Dr. (Mrs.) R. J. Satputaley</h2>
+                        <p class="description">Power Quality</p>
+                    </button>
+                </a>
+                
+            </div>
+               
+        </div>
+    </div>
+    <header class="header-style">
+        <h1 >ASSISTANT PROFESSOR (Grade-I)</h1>
+    </header>
+
+    <div class="container">
+        
+        
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-a-dhabale/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/7.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-a-dhabale/">
+                    <button>
+                        <h2>Dr. A. Dhabale</h2>
+                        <p class="description">Control Systems</p>
+                    </button>
+                </a>
+                
+            </div>
+               
+        </div>
+
+
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-arghya-mitra/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/5.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-arghya-mitra/">
+                    <button>
+                        <h2>Dr. Arghya Mitra</h2>
+                        <p class="description">Power system dynamics</p>
+                    </button>
+                   
+                </a>
+                
+            </div>
+               
+        </div>
+
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-bhooshan-rajpathak/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/6.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-bhooshan-rajpathak/">
+                    <button>
+                        <h2>Dr. Bhooshan Rajpathak</h2>
+                        <p class="description">Control Theory, Piecewise Smooth Systems</p>      
+                    </button>
+
+                </a>
+                
+            </div>
+               
+        </div>
+    
+    </div>
+
+    <header class="header-style">
+        <h1 >ASSISTANT PROFESSOR (Grade-II)</h1>
+    </header>
+    <div class="container">
+        
+        
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-krishnama-raju-suraparaju/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/1.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-krishnama-raju-suraparaju/">
+                    <button>
+                        <h2>Dr. Krishnama Raju Suraparaju</h2>
+                        <p class="description">Control Systems</p>
+                    </button>
+                   
+                </a>
+ 
+            </div>
+               
+        </div>
+
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-ramsha-karampuri/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/30.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-ramsha-karampuri/">
+                    <button>
+                        <h2>Dr. Ramsha Karampuri</h2>
+                        <p class="description">Power Electronics, Electrical Drives, Renewable Energy System
+                    </button>
+                </a>
+               
+
+                </p>
+            </div>
+               
+        </div>
+
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-jay-prakash-singh/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/8.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-jay-prakash-singh/">
+                    <button>
+                        <h2>Dr. Jay Prakash Singh</h2>
+                        <p class="description">Control System, Nonlinear Dynamics</p>
+                    </button>
+                </a>
+               
+            </div>
+               
+        </div>
+
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-avisha-tah/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2024/04/DSC_3156-scaled-e1716982687298-150x150.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-avisha-tah/">
+                    <button>
+                        <h2>Dr. Avisha Tah</h2>
+                        <p class="description">Power Electronics Application to Power Systems</p>
+                    </button>
+                </a>
+                
+            </div>
+               
+        </div>
+
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-soumyabrata-das/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/31.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-soumyabrata-das/">
+                    <button>
+                        <h2>Dr. Soumyabrata Das</h2>
+                    <p class="description">Power Systems</p>
+                    </button>
+                    
+                </a>
+                
+            </div>
+               
+        </div>
+
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-jawaharlal-bhukya/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/24.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-jawaharlal-bhukya/">
+                    <button>
+                        <h2>Dr. Jawaharlal Bhukya</h2>
+                        <p class="description">Power Systems, Renewable Energy Systems</p>
+                    </button>
+                </a>
+                
+            </div>
+               
+        </div>
+
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-mohd-alam/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/9.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-mohd-alam/">
+                    <button>
+                        <h2>Dr. Mohd Alam</h2>
+                        <p class="description">Power Electronics, Energy systems</p>
+                    </button>
+                </a>
+               
+            </div>
+               
+        </div>
+
+        <div> 
+
+            <div class="Umre-pic-div">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-narendrababu-a/">
+                    <img src="https://vnit.ac.in/engineering/electrical/wp-content/uploads/2023/02/12.jpg" class="Umre-pic">
+                </a>
+                
+            </div>
+            <div class="Umre-text">
+                <a href="https://vnit.ac.in/engineering/electrical/dr-narendrababu-a/">
+                    <button>
+                        <h2>Dr. Narendrababu A</h2>
+                        <p class="description">Power Electronics</p>
+                    </button>
+                </a>
+
+            </div>
+               
+        </div>
+    
+    </div>
+
+    <header class="footer-header">
+        Adjunct Assistant Professor of Practice
+    </header>
+    <div class="footer">
+        <p>
+              &#62 Dr. Sunil Mutha
+        </p>
+    </div>
+    <div class="footer">
+        <p>
+          &#62 Dr. M.M. Renge
+        </p>
+    </div>
+    <div class="footer"> 
+        <p>
+          &#62 Dr. T. G. Arora
+        </p>
+    </div>
+    <div class="footer">
+        <p>
+            &#62 Dr. Devsuth Govind
+        </p>
+    </div>
+    <div class="footer">
+        <p>
+            &#62 Ms. Sonal C. Meshram
+        </p>
+    </div>
+    <div class="footer">
+        <p>
+            &#62 Dr.Sarvesh A. Wakode
+        </p>
+    </div>
+   
+    
+    
+    
+    
+    
+</body>
+</html>
