@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./fa.css">
+    <!-- <link rel="stylesheet" href="../navbar/styles.css"> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700&display=swap" rel="stylesheet">
+</head>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-left">
+            <a href="../index.html">
+                <img src="../DATA/Media/icons/house-solid.svg" alt="Home" class="home-icon">
+            </a>
+        </div>
+        <div class="header-center">
+            <img src="../DATA/Media/logo.png" alt="Department Logo" class="header-logo">
+           
+        </div>
+    </header>
+
+    <main>
+         <!-- Navbar -->
+    <nav class="navbar">
+
+        <!--Desktop Navbar-->
+        <ul class="desktop">
+            <li><a target="_blank" href="https://vnit.ac.in/" class="desk-item">VNIT Home</a></li>
+            <li class="has-dropdown">
+                <a href="#" class="desk-item">Student Section
+                <span class="arrow"></span>
+                </a>
+                <ul class="submenu">
+                    <li><a href="#" class="desk-item student-menu">Department Council</a></li>
+                    <!-- <li><a href="#" class="desk-item student-menu">Student Details</a></li> -->
+                    <li class="has-dropdown"><a href="#" class="desk-item student-menu">CourseBook
+                        <span class="sub-arrow"></span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a target="_blank" href="/DATA/TimeTableJson/first_year_cb.pdf" class="desk-item">First Year Coursebook</a></li>
+                        <li><a target="_blank" href="https://vnit.ac.in/engineering/electrical/academics/" class="desk-item">Department Coursebook</a></li>
+                    </ul>
+                    </li>
+                    <!-- <li><a target="_blank" href="/Faculty_Advisor/fa.html" class="desk-item student-menu">Faculty Advisors</a></li> -->
+                    <li><a target="_blank" href="/PAGES/mentor.html" class="desk-item student-menu">Mentors</a></li>
+                    <li><a target="_blank" href="/DATA/TimeTableJson/code_of_conduct.pdf" class="desk-item student-menu">Code Of Conduct</a></li>
+                </ul>
+            </li>
+            <li><a target="_blank" href="/Gallery_Final/trail.html" class="desk-item">Gallery</a></li>
+            <li><a target="_blank" href="/PAGES/prof-gallery.html" class="desk-item">Professor Section</a></li>
+            <li class="has-dropdown">
+                <a href="/PAGES/timetable.html" class="desk-item">Time Table
+                    <span class="arrow"></span>
+                </a>
+                <ul class="submenu">
+                    <li><a target="_blank" href="/DATA/TimeTableJson/FirstYearBTechTimeTable2024-25.pdf" class="desk-item student-menu">First year</a></li>
+                    <li><a target="_blank" href="/DATA/TimeTableJson/TT_W24.pdf" class="desk-item student-menu">Second year</a></li>
+                    <li><a target="_blank" href="/DATA/TimeTableJson/TT_W24.pdf" class="desk-item student-menu">Third year</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="desk-item">News and Notice</a></li>
+
+        </ul>
+
+        <!--Mobile Navbar-->
+        <div class="mobile">
+            <ul>
+                <li class="active"><a href="#" id="home"><span>Home</span><i class="ri-home-3-line"></i></a></li>
+                <li><a href="#" id="academic"><span>Academics</span><i class="ri-user-3-line"></i></a></li>
+                
+                <li ><a href="#" id="gallery"><span>Gallery</span><i class="ri-gallery-line"></i></a></li>
+                <li><a href="#" id="professors"><span>Professors</span><i class="ri-presentation-line"></i></a></li>
+                <li><a href="#" id="notice"><span>Notices</span><i class="ri-article-line"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+        <!-- Main Content-->
+        <div class="content">
+
+            <!-- <div class="navigation">
+                <div class="select-year">
+                    <a href="#third">3rd Year</a>
+                    <a href="#second">2nd Year</a>
+                </div>
+            </div> -->
+
+            <div class="main" id="third">
+                <div class="heading">
+                    <h2>3rd Year Faculty Advisor</h2>
+                </div>
+                <div class="box">
+                <div class="item">Advisor Name</div>
+                <div class="item">Email ID</div>
+                <div class="item">Phone Number</div>
+                <div class="item">Starting Enrollment No</div>
+                <div class="item">Ending Enrollment No</div>
+                <div class="item">Dr. JawaharlalBhukya</div>
+                <div class="item">jawahar2049@eee.vnit.ac.in</div>
+                <div class="item">8000599400</div>
+                <div class="item">BT23EEE001</div>
+                <div class="item">BT23EEE029</div>
+                <div class="item">Dr. Mohammed Alam</div>
+                <div class="item">mohdalam@eee.vnit.ac.in</div>
+                <div class="item">0712-2802337</div>
+                <div class="item">BT23EEE030</div>
+                <div class="item">BT23EEE057</div>
+                <div class="item">Dr. Avisha Tah</div>
+                <div class="item">avishatah@eee.vnit.ac.in</div>
+                <div class="item">+91 83468 88456</div> 
+                <div class="item">BT23EEE058</div>
+                <div class="item">BT23EEE086</div>
+                <div class="item">Dr. Soumyabrata Das</div>
+                <div class="item">soumyabratadas@eee.vnit.ac.in</div>
+                <div class="item">0712-2801309</div>
+                <div class="item">BT23EEE087</div>
+                <div class="item">BT22EEE117</div>
+                </div>
+
+            </div>
+
+            <div class="main" id="second">
+                <div class="heading">
+                    <h2>2nd Year Faculty Advisor</h2>
+                </div>
+                <div class="box">
+                    <div class="item">Advisor Name</div>
+                    <div class="item">Email ID</div>
+                    <div class="item">Phone Number</div>
+                    <div class="item">Starting Enrollment No</div>
+                    <div class="item">Ending Enrollment No</div>
+                    <div class="item">Dr. Narendrababu A</div>
+                    <div class="item">anbabu@eee.vnit.ac.in</div>
+                    <div class="item">0712-2802335</div>
+                    <div class="item">BT23EEE001</div>
+                    <div class="item">BT23EEE028</div>
+                    <div class="item">Dr. Padmini Singh</div>
+                    <div class="item">padminisingh@eee.vnit.ac.in</div>
+                    <div class="item">0712-2801133</div>
+                    <div class="item">BT23EEE029</div>
+                    <div class="item">BT23EEE056</div>
+                    <div class="item">Dr. Jay Prakash Singh</div>
+                    <div class="item">jayprakashsingh@eee.vnit.ac.in</div>
+                    <div class="item">0712-2802304</div>
+                    <div class="item">BT23EEE057</div>
+                    <div class="item">BT23EEE083</div>
+                    <div class="item">Dr. Bhooshan Rajpathak</div>
+                    <div class="item">bhooshanar@eee.vnit.ac.in</div>
+                    <div class="item">0712-2801123</div>
+                    <div class="item">BT23EEE084</div>
+                    <div class="item">BT23EEE119</div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <img src="/DATA/footer/logo.png" alt="">
+        </div>
+
+        <div class="links">
+            <h3>Quick Links</h3>
+            <a target="_blank" href="https://aims.vnit.ac.in/exam">AIMS Login</a>
+            <a target="_blank" href="./PAGES/maps.html">Direction & Map</a>
+        </div>
+
+        <div class="contact">
+            <h3>Reach Us</h3>
+            <p>Contact- 0712-2801349</p>
+            <p>Email: head@eee.vnit.ac.in</p>
+            <div class="social">
+                <a target="_blank" href="https://www.instagram.com/vnit_trical?igsh=OWZxOTJndDZnd3Fi"><img src="/DATA/footer/instagram-bw.png" alt=""></a>
+                <a target="_blank" href="https://www.linkedin.com/school/visvesvaraya-national-institute-of-technology/"><img src="/DATA/footer/linkedin-bw.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../navbar/index.js"></script>
+</body>
+</html>
