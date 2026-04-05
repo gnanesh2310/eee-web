@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <!--Font Link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Remix Icons-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <title>EEE Department</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/news.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/nav.css">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <a href="../index.html">
+                <img src="../DATA/Media/icons/house-solid.svg" alt="Home" class="home-icon">
+            </a>
+        </div>
+        <div class="header-center">
+            <img src="../DATA/Media/logo.png" alt="Department Logo" class="header-logo">
+           
+        </div>
+    </header>
+    
+
+    <main>
+        <div class="image-slider">
+            <div class="slider-container">
+                <div class="slides">
+                    <!-- Images will be added dynamically here -->
+                </div>
+            </div>
+            <button class="prev" onclick="prevSlide()">❮</button>
+            <button class="next" onclick="nextSlide()">❯</button>
+        </div>
+        
+        <div class="section-container">
+            <section id="latest-updates" class="news-sections">
+                <h2>Latest Updates</h2>
+                <div class="news-items"></div>
+                <button class="expand-button" onclick="toggleExpand('latest-updates')">Expand</button>
+            </section>
+        </div>
+
+
+
+        <div class="section-container">
+            <section id="events-notification" class="news-sections">
+                <h2>Events & Notifications</h2>
+                <div class="news-items"></div>
+                <button class="expand-button" onclick="toggleExpand('events-notification')">Expand</button>
+            </section>
+        </div>
+        
+        <div class="section-container">
+            <section id="student-notification" class="news-sections">
+                <h2>Student Notifications</h2>
+                <div class="news-items"></div>
+                <button class="expand-button" onclick="toggleExpand('student-notification')">Expand</button>
+            </section>
+        </div>
+
+        <div class="section-container">
+            <section id="department-news" class="news-sections">
+                <h2>Department News</h2>
+                <div class="news-items"></div>
+                <button class="expand-button" onclick="toggleExpand('department-news')">Expand</button>
+            </section>
+        </div>
+
+       
+
+
+        
+        
+        
+
+        
+    </main>
+
+    <script src="js/base.js"></script>
+    <script src="js/header.js"></script>
+    <script src="js/news.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/nav.js"></script>
+
+</body>
+</html>

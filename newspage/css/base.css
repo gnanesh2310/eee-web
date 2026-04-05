@@ -1,0 +1,24 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  /*background-image: url('../pics/ee.jpeg');
+  background-size: cover;*/
+  color: #000000;
+
+}
+
+
+/* Add this to base.css for general styling of sections */
+.section-container {
+  background: rgba(255, 255, 255, 0.8); /* White with 80% opacity */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+*{
+cursor: url('/DATA/Media/icons/bolt-solid.svg') 0 0, auto;
+}

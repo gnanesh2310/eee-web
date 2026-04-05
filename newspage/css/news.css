@@ -1,0 +1,119 @@
+.news-sections {
+  margin: 20px;
+  padding: 20px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.news-items {
+  display: flex;
+  position: relative;
+  width: 100%;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  transition: all 0.5s ease;
+}
+
+.news-box {
+  flex: 1;
+  min-width: 25%; /* Show 4 news boxes at a time */
+  box-sizing: border-box;
+  padding: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-right: 10px;
+  height: 370px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.news-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.news-title {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.news-text {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+.expand-button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.expand-button:hover {
+  background-color: #0056b3;
+}
+
+.news-sections.expanded .news-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .news-box {
+    min-width: 33.33%; /* Show 3 news boxes at a time */
+    height: 450px;
+  }
+  .news-sections.expanded .news-items {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .news-box {
+    min-width: 100%; /* Show 1 news box at a time */
+    height: 300px;
+  }
+  .news-sections.expanded .news-items {
+    grid-template-columns: repeat(1, 1fr);
+    height: 100%;
+  }
+}
+
+/* Custom scrollbar */
+.news-items::-webkit-scrollbar {
+  height: 10px;
+}
+
+.news-items::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 10px;
+}
+
+.news-sections:hover {
+  height: 100%;
+}
+.news-box:hover{
+  height: 100%;
+}
+.section-container:hover{
+  height: 100%;
+}
