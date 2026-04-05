@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Department of Electrical Engineering</title>
+    <link rel="stylesheet" href="CSS/homepage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <!-- fonts -->
+     <!-- kanit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- k2d -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- hind -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- istock web -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-content">
+            <img src="DATA/Media/logo.png" alt="Department Logo">
+            <h1>TRICAL</h1>
+            <p>Powering the Future of Electrical Engineering</p>
+        </div>
+        <!-- <button class="login-btn" id="loginButtonHomePage">LOGIN</button> -->
+        <!-- <div class="user-logged-in" id="userLogged">
+            <img src="\DATA\Media\icons\user-solid.svg" alt="Logged in as abc">
+        </div> -->
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+
+        <!--Desktop Navbar-->
+        <ul class="desktop">
+            <li><a target="_blank" href="https://vnit.ac.in/" class="desk-item">VNIT Home</a></li>
+            <li class="has-dropdown">
+                <a href="#" class="desk-item">Student Section
+                <span class="arrow"></span>
+                </a>
+                <ul class="submenu">
+                    <li><a target="_blank" href="/dept/dept.html" class="desk-item student-menu">Department Council</a></li>
+                    <!-- <li><a href="#" class="desk-item student-menu">Student Details</a></li> -->
+                    <li class="has-dropdown"><a href="#" class="desk-item student-menu">CourseBook
+                        <span class="sub-arrow"></span>
+                    </a>
+                    <ul class="submenu">
+                        <li><a target="_blank" href="/DATA/TimeTableJson/first_year_cb.pdf" class="desk-item">First Year Coursebook</a></li>
+                        <li><a target="_blank" href="https://vnit.ac.in/engineering/electrical/academics/" class="desk-item">Department Coursebook</a></li>
+                    </ul>
+                    </li>
+                    <li><a target="_blank" href="/Faculty_Advisor/fa.html" class="desk-item student-menu">Faculty Advisors</a></li>
+                    <li><a target="_blank" href="/PAGES/mentor.html" class="desk-item student-menu">Mentors</a></li>
+                    <li><a target="_blank" href="/DATA/TimeTableJson/code_of_conduct.pdf" class="desk-item student-menu">Code Of Conduct</a></li>
+                </ul>
+            </li>
+            <li><a target="_blank" href="/Gallery_Final/trail.html" class="desk-item">Gallery</a></li>
+            <li><a target="_blank" href="/PAGES/prof-gallery.html" class="desk-item">Professor Section</a></li>
+            <li class="has-dropdown">
+                <a href="/PAGES/timetable.html" class="desk-item">Time Table
+                    <span class="arrow"></span>
+                </a>
+                <ul class="submenu">
+                    <li><a target="_blank" href="/DATA/TimeTableJson/FirstYearBTechTimeTable2024-25.pdf" class="desk-item student-menu">First year</a></li>
+                    <li><a target="_blank" href="/DATA/TimeTableJson/TT_W24.pdf" class="desk-item student-menu">Second year</a></li>
+                    <li><a target="_blank" href="/DATA/TimeTableJson/TT_W24.pdf" class="desk-item student-menu">Third year</a></li>
+                </ul>
+            </li>
+            <li><a target="_blank" href="./newspage/news.html" class="desk-item">News and Notice</a></li>
+
+        </ul>
+
+        <!--Mobile Navbar-->
+        <div class="mobile">
+            <ul>
+                <li class="active"><a href="#" id="home"><span>Home</span><i class="ri-home-3-line"></i></a></li>
+                <li><a href="#" id="academic"><span>Academics</span><i class="ri-user-3-line"></i></a></li>
+                
+                <li ><a href="#" id="gallery"><span>Gallery</span><i class="ri-gallery-line"></i></a></li>
+                <li><a href="#" id="professors"><span>Professors</span><i class="ri-presentation-line"></i></a></li>
+                <li><a href="#" id="notice"><span>Notices</span><i class="ri-article-line"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        
+        <section id="overview">
+            <p>The Electrical Engineering Department at VNIT offers a comprehensive M.Tech program, which spans two years and includes core courses, electives, and a research project in the final year under faculty supervision. The department specializes in Integrated Power System (IPS) and Power Electronics and Drives (PED), aiming to provide in-depth knowledge and practical experience in these fields.</p>
+        </section>
+
+        <section id="features">
+            <div class="feature-card">
+                <a ><img id="feature-image" src="/DATA/Media/achievement.png" alt="Achievements" ></a>
+                <button id="feature-btn"><h3>Awards & Achievements</h3></button>
+            </div>
+            <div class="feature-card">
+                <a target="_blank" href="/PAGES/mentor.html"><img id="feature-image" src="/DATA/Media/mentor.png" alt="Course and Curriculum" ></a>
+                <a target="_blank" href="/PAGES/mentor.html"><button id="feature-btn"><h3>Student Mentors</h3></button></a>
+            </div>
+            <div class="feature-card">
+                <a target="_blank" href="/dept/dept.html"><img id="feature-image" src="/DATA/Media/departmentcouncil.png" alt="Specifications" ></a>
+                <a target="_blank" href="/dept/dept.html"><button id="feature-btn"><h3>Department Council</h3></button></a>
+            </div>
+            <div class="feature-card">
+                <a target="_blank" href="/PAGES/prof-gallery.html"><img id="feature-image" src="/DATA/Media/prof.png" alt="Specifications" ></a>
+                <a target="_blank" href="/PAGES/prof-gallery.html"><button id="feature-btn"> <h3>Professor Section</h3></button></a>
+            </div>
+        </section>
+
+
+
+        <section id="department-stat">
+                <h3 id="departstatdiv">Department Stats</h3>
+            <div class="stat-card">
+                <p>2</p>
+                <h3>PG Specialisations</h3>
+                
+            </div>
+            <div class="stat-card">
+                <p>56+</p>
+                <h3>PUBLICATIONS (THIS YEAR)</h3>
+                
+            </div>
+            <div class="stat-card">
+                <p>528+</p>
+                <h3>STUDENTS</h3>
+                
+            </div>
+            <div class="stat-card">
+                <p>28</p>
+                <h3>FACULTY</h3>
+                
+            </div>
+            <div class="stat-card">
+                <p>5+</p>
+                <h3>PATENTS (THIS YEAR)</h3>
+                
+            </div>
+        </section>
+
+        <section id="Hodsection">
+            <div class="hodsection">
+                <h3>MEET OUR HOD</h3>
+                <img src="/DATA/Media/hodsir.jpg" alt="">
+                <p id="boldp" class="bold-p">Dr. B.S. Umre</p>
+                <p id="hoddes" class="HodDes">Professor and Head</p>
+                <p id="hoddes" class="HodDes">Electrical Machines and Torsional Oscillations</p>
+                <p id="boldp" class="bold-p">contact: 07122801208</p>
+                <p id="boldp" class="bold-p">Email: head@eee.vnit.ac.in</p>
+            </div>
+        </section>
+
+        <section id="meetOurProfs">
+            <div class="blockcards single">
+                <button id="btn1" onclick="window.open('/PAGES/prof-gallery.html','_blank');">MEET OUR PROFESSORS</button>
+            </div>
+            <div class="blockcards double">
+                <button id="btn2" onclick="window.open('https://vnit.ac.in/engineering/electrical/wp-content/uploads/2024/07/EEE-Newsletter-updated.pdf','_blank');">DEPARTMENT NEWSLETTER</button>
+            </div>
+            <div class="blockcards double">
+                <button id="btn2">ANNUAL REPORT</button>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div>
+            <img src="/DATA/footer/logo.png" alt="">
+        </div>
+
+        <div class="links">
+            <h3>Quick Links</h3>
+            <a target="_blank" href="https://aims.vnit.ac.in/exam">AIMS Login</a>
+            <a target="_blank" href="./PAGES/maps.html">Direction & Map</a>
+        </div>
+
+        <div class="contact">
+            <h3>Reach Us</h3>
+            <p>Contact- 0712-2801349</p>
+            <p>Email: head@eee.vnit.ac.in</p>
+            <div class="social">
+                <a target="_blank" href="https://www.instagram.com/vnit_trical?igsh=OWZxOTJndDZnd3Fi"><img src="/DATA/footer/instagram-bw.png" alt=""></a>
+                <a target="_blank" href="https://www.linkedin.com/school/visvesvaraya-national-institute-of-technology/"><img src="/DATA/footer/linkedin-bw.png" alt=""></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="Scripts/script.js"></script> 
+</body>
+</html>
