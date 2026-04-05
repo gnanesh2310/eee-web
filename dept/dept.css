@@ -1,0 +1,455 @@
+*{
+    cursor: url('/DATA/Media/icons/bolt-solid.svg') 0 0, auto;
+    padding: 0;
+    margin: 0;
+box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff; 
+    width: 100%;
+    height: 100px; 
+  }
+  .body{
+    margin-top: 100px;
+  }
+  
+  
+  .header-left {
+    position: absolute;
+    left: 20px; 
+  }
+  
+  .home-icon {
+    width: 30px; 
+  }
+  
+  
+  .header-center {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .header-logo {
+    width: 350px; 
+    margin-bottom: 5px;
+  }
+  
+  .header-center h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #000; 
+  }
+  
+  
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+    .header-left {
+
+        margin-bottom: 10px;
+    }
+    .header-center h1 {
+        font-size: 1.2em;
+    }
+  
+
+nav{
+    width: 100%;
+    height: 40px;
+    background-color: blue;
+}
+
+#third{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#second{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.content::before{
+    content: '';
+    background-image: url(/DATA/Mentor/background-2.jpg);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+    filter: grayscale(0.9);
+    opacity: 0.12;
+}
+
+.content .select-year{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.content .select-year a{
+    margin: 30px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: aliceblue;
+    border:2px solid gray;
+    font-size: 20px;
+    color: #000;
+}
+
+.content .select-year a:hover{
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in;
+}
+
+
+
+
+.sub-menu{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    padding: 20px;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    height: 350px;
+    width: 240px;
+    margin: 2em 0;
+    background-color: rgb(77, 87, 95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    margin: 40px;
+}
+
+.card img{
+    height: 150px;
+    border-radius: 5px;
+    margin: 15px 0;
+}
+
+.card h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.card .social a{
+    text-decoration: none;
+
+    padding: 4px;
+    margin: 0 10px;
+}
+
+.card .social a img{
+    height: 40px;
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 18px;
+}
+
+.content #other{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.others{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sub-menu h2{
+    font-size: 3vw;
+}
+
+.sub-menu::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-image: url(/DATA/Mentor/background-1.jpg);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.submenu{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0;
+    padding: 20px;
+
+}
+.submenu::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-image: url(/DATA/Mentor/background-1.jpg);
+    z-index: -1;
+    opacity: 0.6;
+}
+
+#DR::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: aqua;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 0 0 80px 0;
+}
+
+#CR::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: aqua;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 0 0 80px 0;
+}
+#ADR::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #d6d6a2;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 80px 0 80px 0;
+}
+#ACR::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #d6d6a2;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 80px 0 80px 0;
+}
+#sports::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #565d91;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 80px 0 80px 0;
+}
+#tech::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: aquamarine;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 80px 0 80px 0;
+}
+
+#creative::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #597Dff;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 80px 0 80px 0;
+}
+
+#cultural::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: aqua;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 80px 0 80px 0;
+}
+
+#tp::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #d6d6a2;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 80px 0 80px 0;
+}
+#other::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color: #Ffc659;
+    z-index: -1;
+    opacity: 0.7;
+    border-radius: 80px 0 80px 0;
+}
+
+@media only screen and (max-width:1200px) {
+    
+    .content .sub-menu .complex{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .content #other{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+@media only screen and (max-width:900px) {
+    
+    .content .sub-menu .complex{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+
+    .content #other{
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+    }
+    
+
+}
+
+@media only screen and (max-width:600px) {
+
+    .card{
+        height: 260px;
+        width: 180px;
+        margin: 10px;
+    }
+
+    .card img{
+        height: 125px;
+    }
+
+    .sub-menu h2{
+        font-size: 23px;
+    }
+
+    .card .social img{
+        margin-top: 10px;
+    
+    }
+
+}
+
+@media only screen and (max-width:400px) {
+
+    .card{
+        height: 240px;
+        width: 160px;
+        margin: 10px; 
+    }
+
+    .card img{
+        height: 100px;
+    }
+
+     .card h3{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-size: 18px;
+
+    }
+}
+
+
+footer{
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #C6ccff;
+}
+
+footer img{
+    height: 120px;
+}
+
+footer .links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .links h3{
+    font-size: 25px;
+    margin: 5px;
+}
+
+footer .links a{
+    font-size: 20px;
+    margin: 2px;
+}
+footer .contact h3{
+    font-size: 25px;
+}
+
+footer .contact .social img{
+    height: 30px;
+    margin: 5px;
+}
+
+footer .contact p{
+    font-size: 18px;
+    margin: 2px;
+}
